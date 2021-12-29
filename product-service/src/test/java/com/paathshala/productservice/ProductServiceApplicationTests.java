@@ -1,4 +1,4 @@
-package com.vinsguru.productservice;
+package com.paathshala.productservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

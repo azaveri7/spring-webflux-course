@@ -1,15 +1,15 @@
-package com.vinsguru.productservice.util;
+package com.paathshala.productservice.util;
 
-import com.vinsguru.productservice.dto.ProductDto;
-import com.vinsguru.productservice.entity.Product;
+import com.paathshala.productservice.dto.ProductDto;
+import com.paathshala.productservice.entity.Product;
 import org.springframework.beans.BeanUtils;
 
 public class EntityDtoUtil {
 
     public static ProductDto toDto(Product product){
-        ProductDto dto = new ProductDto();
-        BeanUtils.copyProperties(product, dto);
-        return dto;
+        ProductDto productDto = new ProductDto();
+        BeanUtils.copyProperties(product, productDto);
+        return productDto;
     }
 
     public static Product toEntity(ProductDto productDto){
@@ -17,5 +17,4 @@ public class EntityDtoUtil {
         BeanUtils.copyProperties(productDto, product);
         return product;
     }
-
 }
